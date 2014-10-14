@@ -1,0 +1,145 @@
+html{
+	background-color: #B88A00;
+	margin: 0;
+	color: Black;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+body{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 762px;
+	margin-top: 0px;
+	padding-bottom: 1px;
+}
+
+div.all{
+	margin: 0px 1px 0px 1px;
+	witdh: 760px;
+	background-color: white;
+	
+}
+
+div.all_text{
+	margin: 5px 5px 5px 5px;
+	padding-bottom: 5px;
+	
+}
+
+div.miejsce_menu{
+	margin-top: 0;
+	height: 41px;
+	background-color: black;
+	margin-bottom: 1px;
+}
+
+table{}
+
+input.in{
+	width: 160px;
+}
+
+input.in:hover, input.in:active{
+	background-color: #FFCC33;
+}
+
+input.button{
+	width: 100px;
+	background-color: #FFCC33;
+}
+input.button:hover{
+	background-color:#B88A00;
+}
+
+table.dispData{
+	
+	padding-bottom: 5px;
+}
+
+table.dispData td.th{
+	background-color: #B88A00;
+	font-weight: bold;	
+}
+table.dispData td{
+	padding-left: 5px;
+	background-color: #FFCC33;
+}
+
+form{
+	padding-bottom: 5px;
+}
+
+div#myDiv{
+	padding-top: 10px;
+}
+
+div.podmenu{
+	margin-top: 10px;
+	position: relative;
+	margin-left: 0;
+	height: 20px;
+	background-color: white;
+	margin: 0 0 1px 0;
+	border: black;
+}
+div.podmenu ul{
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+div.podmenu li{
+	list-style: none;
+	float: left;
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+}
+div.podmenu ul li a{
+padding: 12px 16px;
+	text-decoration: none;
+	color: Black;
+	display: Block;
+}
+div.podmenu ul li a:hover{
+	
+	background-color: #FFCC33;
+}
+
+div.menu{
+	margin-top: 10px;
+	position: relative;
+	margin-left: 0;
+	height: 40px;
+	background-color: white;
+	margin: 0 0 1px 0;
+	border: black;
+	
+}
+
+/*#################################
+############## MENU ###############
+#################################*/
+
+div.menu ul{
+margin: 0;
+	
+	list-style-type: none;
+text-align: center;
+}
+div.menu li{
+	list-style: none;
+	float: left;
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+}
+div.menu ul li a{
+padding: 12px 26px;
+	text-decoration: none;
+	color: Black;
+	display: Block;
+}
+div.menu ul li a:hover{
+	background-color: #FFCC33;
+}
