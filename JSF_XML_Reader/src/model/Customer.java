@@ -1,6 +1,6 @@
 package model;
 
-import javax.xml.bind.annotation.XmlAnyAttribute;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -32,7 +32,7 @@ public class Customer {
 		return id;
 	}
 	
-	@XmlAnyAttribute
+	@XmlAttribute
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -46,5 +46,10 @@ public class Customer {
 		this.salary = salary;
 	}
 	
+	@Override
+	public String toString(){
+		return "Customer [name: "+name+", surname: "+surname+", salary: "+salary+"]";
+		
+	}
 	
 }
