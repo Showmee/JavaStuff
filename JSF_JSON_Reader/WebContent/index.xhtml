@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<f:metadata>
+	<f:event type="preRenderView" listener="#{jbean.init}" />
+</f:metadata>
+
+<body>
+	<p>
+		JAXB Example of Reading XML file and displaying it on JSF page
+	</p>
+
+	<ui:repeat var="i" value="#{jbean.list}">
+		<div>
+			<p>ID: #{i.id},</p>
+			<p>Names: <ui:repeat var="x" value="#{i.names}">#{x}, </ui:repeat></p>
+			<p>Surname: #{i.surname},</p>
+			<p>Salary: #{i.salary}.</p>
+		</div>
+	</ui:repeat>
+</body>
+</html>
