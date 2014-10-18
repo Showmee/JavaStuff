@@ -50,20 +50,10 @@ public class JSONReaderBean implements Serializable {
 			System.out.println("File found!");
 
 			Customer c = new Customer();
-
 			ArrayList<String> temp = new ArrayList<String>();
 
 			long id = (Long) jsonObject.get("id");
 			System.out.println(id);
-
-			// loop array
-			//JSONArray names = (JSONArray) jsonObject.get("name");
-
-			/*
-			 * Iterator<String> iterator = names.iterator(); while
-			 * (iterator.hasNext()) { System.out.println(iterator.next());
-			 * temp.add(iterator.next()); }
-			 */
 
 			// get an array from the JSON object
 			JSONArray names = (JSONArray) jsonObject.get("name");
@@ -75,20 +65,13 @@ public class JSONReaderBean implements Serializable {
 				temp.add(""+names.get(i));
 			}
 
-			/*// take each value from the json array separately
-			Iterator i = names.iterator();
-			while (i.hasNext()) {
-				JSONObject innerObj = (JSONObject) i.next();
-				System.out.println("language " + innerObj.get("lang");
-						//+ " with level " + innerObj.get("knowledge"));
-			}*/
-
 			String surname = (String) jsonObject.get("surname");
 			System.out.println(surname);
 
 			long salary = (Long) jsonObject.get("salary");
 			System.out.println(salary);
 
+			//set array to display @ JSF Page
 			c.setId((int) id);
 			c.setNames(temp);
 			c.setSurname(surname);
