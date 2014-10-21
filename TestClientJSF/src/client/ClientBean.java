@@ -6,6 +6,9 @@ import javax.faces.bean.SessionScoped;
 import webservices.HelloWorldRemote;
 import webservices.HelloWorldService;
 
+/** 
+ * @Author @MiloszWadas
+ */
 @ManagedBean(name = "clientBean")
 @SessionScoped
 public class ClientBean {
