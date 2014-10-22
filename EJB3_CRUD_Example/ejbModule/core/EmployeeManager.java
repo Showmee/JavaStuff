@@ -12,6 +12,11 @@ import javax.persistence.Query;
 
 import model.Employee;
 
+/**
+ * 
+ * @author @MiloszWadas
+ *
+ */
 @WebService
 @SOAPBinding(style = Style.RPC)
 @Stateless
@@ -24,12 +29,15 @@ public class EmployeeManager implements EmployeeManagerRemote{
 	
 	@WebMethod
 	public void addEmployee(String name, String surname, int salary){
+		System.out.println("check 1");
 		Employee emp = new Employee();
 		emp.setFirst_name(name);
 		emp.setLast_name(surname);
 		emp.setSalary(salary);
+		System.out.println("check 2");
 		
 		em.persist(emp);
+		
 		System.out.println("Employee added to DB!");
 	};
 	
