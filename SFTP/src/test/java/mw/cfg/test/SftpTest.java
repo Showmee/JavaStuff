@@ -5,11 +5,11 @@ import org.junit.Test;
 
 import mw.sftp.Sftp;
 
-public class ConfigTest
+public class SftpTest
 {
 
 	@Test
-	public void testExample()
+	public void sendSingleFileTest()
 	{
 		String PARAM_CMD = "PUT";
 		
