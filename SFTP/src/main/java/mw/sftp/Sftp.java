@@ -26,6 +26,8 @@ import mw.cfg.Config;
  */
 public class Sftp
 {
+	private String 
+	
 	
 	private final String STATUS_OK = "OK";
 
